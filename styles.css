@@ -4,7 +4,8 @@ body {
     padding: 0;
 }
 
-header {
+
+header, body {
     background-color: #08162B;
 }
 
@@ -53,9 +54,122 @@ button {
 }
 
 .logo {
-    padding-bottom: 3px;
+    /* padding-bottom: 3px; */
     width: 150px;
 }
+
+.hero {
+    display: grid;
+    height: 80vh;
+    width: 100vw;
+    grid-template-areas: "information smartwatch"
+                          "models smartwatch";
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 50% 1fr;
+}
+
+.information__container {
+    grid-area: information;
+    margin-top: 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+}
+
+.information__container h1 {
+    margin: 0 15px;
+    padding: 0;
+    height: 90px;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 100px;
+    color: white;
+}
+
+.information__container h2 {
+margin: 0;
+margin-left: 10px;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 38px;
+letter-spacing: 0.5em;
+color: #EF9C9C;
+}
+
+.information__container p {
+margin-top: 20px;
+margin-left: 10px;
+width: 380px;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 25px;
+text-align: justify;
+color: #D8D8D8;
+}
+
+.models__carousel-container {
+    margin-left: -10vw;
+    margin-top: 20px;
+    grid-area: models;
+    display: flex;
+    justify-content: space-evenly;
+    width: 680px;
+}
+
+.model__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 230px;
+    background-color: #2B3544;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.model-title {
+margin: 0;
+padding: 0;
+color: white;
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 51px;
+}
+
+.model-title2 {
+    margin: 0;
+    padding: 0;
+    margin-top: -15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-left: 40px;
+    font-style: normal;
+    font-weight: 275;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+}
+
+.model-title, .model-title2 {
+    text-align: center;
+}
+
+.model-image {
+    height: 180px;
+}
+
+.smartwatch {
+    grid-area: smartwatch;
+    height: 500px;
+}
+
 
 
 
