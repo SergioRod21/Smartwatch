@@ -1,0 +1,62 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #08162B;
+}
+
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 40px;
+    height: 80px;
+    width: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+button {
+    background: #F29494;
+    border: 1px solid #F29494;
+    height: 35px;
+    width: 85px;
+}
+
+.header a, button {
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.navbar {
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -20%;
+    align-items: center;
+}
+
+.menu__icon {
+    width: 25px;
+}
+
+.logo {
+    padding-bottom: 3px;
+    width: 150px;
+}
+
+
+
+
